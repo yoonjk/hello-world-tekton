@@ -18,6 +18,7 @@ spec:
       containers:
       - name: hello-world
         image: quay.io/jgyun_kr/hello-world-tekton:1.0.0
+        imagePullPolicy: Always
         ports:
           - containerPort: 8080
       imagePullSecrets:
